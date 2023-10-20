@@ -8,7 +8,7 @@ import { Component, Input, OnInit } from '@angular/core';
 export class HeaderComponent implements OnInit {
   
   constructor() { }
-  @Input() nome:string = 'Jefferson Xavier';
+  @Input() nome:string = '';
   ngOnInit(): void {
     
   }
