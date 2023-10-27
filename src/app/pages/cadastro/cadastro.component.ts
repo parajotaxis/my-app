@@ -14,14 +14,8 @@ export class CadastroComponent {
     id: '',
     firstName: [null, Validators.required],
     email: [null, Validators.required],
-    prhone: [null, Validators.required],
-    address2: null,
-    city: [null, Validators.required],
-    state: [null, Validators.required],
-    postalCode: [null, Validators.compose([
-      Validators.required, Validators.minLength(5), Validators.maxLength(5)])
-    ],
-    shipping: ['free', Validators.required]
+    prhone: [null, Validators.required],    
+    password: [null, Validators.required]
   });
 
   hasUnitNumber = false;
