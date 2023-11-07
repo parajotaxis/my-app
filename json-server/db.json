@@ -1,0 +1,18 @@
+{
+    "users": [
+        {
+        "id": 1,
+        "firstName": "Jefferson Xavier",
+        "email": "jeffxavier@gmail.com",
+        "phone": "123456789",
+        "password": "123456"
+        },
+        {
+            "id": 2,
+            "firstName": "Jeffer Xav",
+            "email": "jeffxr@hotmail.com",
+            "phone": "123456789",
+            "password": "123456"
+        }
+    ]
+}
