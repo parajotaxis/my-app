@@ -18,4 +18,14 @@ export class UserService {
   addUser(user:any): Observable<User>{
     return this.http.post<User>(this.BASE_URL + 'users', user, httpOptions);
   }
+
+  editUser(user:any): Observable<User>{
+    let url:string = this.BASE_URL + 'users/' + user.id;
+    return this.http.put<User>(url, user, httpOptions);
+  }
+
+  deleteUser(user:any): Observable<User>{
+    let url:string = this.BASE_URL + 'users/' + user.id;
+    return this.http.delete<User>(url, httpOptions);
+  }
 }
