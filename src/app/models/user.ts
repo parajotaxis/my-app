@@ -1,6 +1,6 @@
 export class User{
-    publlic id: string = '';
-    publlic firstName: string = '';
-    publlic phone: string = '';
-    publlic email: string = '';
+    public id: string = '';
+    public firstName: string = '';
+    public phone: string = '';
+    public email: string = '';
 }
