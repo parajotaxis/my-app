@@ -1,5 +1,7 @@
 import { HttpClient, HttpHeaders } from '@angular/common/http';
 import { Injectable } from '@angular/core';
+import { User } from '../models/user';
+import { Observable, of } from 'rxjs';
 
 const httpOptions = {
   headers: new HttpHeaders({'Content type': 'aplication/json'})
