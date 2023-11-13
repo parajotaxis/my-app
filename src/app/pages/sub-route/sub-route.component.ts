@@ -8,16 +8,16 @@ import { ActivatedRoute, Router } from '@angular/router';
 })
 export class SubRouteComponent implements   OnInit {
   
-  constructor(private route : ActivatedRoute, private route: Router) { }
+  constructor(private route : ActivatedRoute, private router: Router) { }
 
   ngOnInit(): void {
     
   }
   goToPag1(){
-    this.route.navigate(['page1'], {relativeTo:this.route})
+    this.router.navigate(['page1'], {relativeTo:this.route})
   }
 
   goToPag2(){
-    this.route.navigate(['page2'], {relativeTo:this.route})
+    this.router.navigate(['page2'], {relativeTo:this.route})
   }
 }
