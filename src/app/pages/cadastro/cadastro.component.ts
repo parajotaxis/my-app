@@ -1,6 +1,7 @@
 import { Component, inject } from '@angular/core';
 
 import { FormBuilder, Validators } from '@angular/forms';
+import { UserService } from 'src/app/services/user.service';
 
 
 @Component({
@@ -20,6 +21,14 @@ export class CadastroComponent {
 
   hasUnitNumber = false;
 
+  //constructor(private fb: FormBuilder, private service: UserService) {}
+  //getErrorMessage(){
+  //  if(this.email.hasError('requeride')){
+  //    return 'o email é obrigatorio!'
+  //  }
+  //  'Voçê deve preencher um valor para o email válido!'
+  //  return this.email.hasError('email')? 'Voçê deve preencher um valor para o email válido!': '';
+  //}
   
   onSubmit(): void {
     alert('Thanks!');
