@@ -20,7 +20,7 @@ export class ListaSimplesComponent implements OnInit {
   getUsers(): void {
     this.service.getUsers().subscribe(
       {
-        next: (response: any) => {
+        next: (response) => {
           console.log('entrou no response')
           console.log(response)
           this.users = response;
@@ -35,7 +35,7 @@ export class ListaSimplesComponent implements OnInit {
   }
 
   goToDetail(user: User){
-    this.router.navigate(['/detalhe', user.id]);
+    this.router.navigate(['/detalhe', user.id, user.phone]);
   }
 
 
