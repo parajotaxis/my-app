@@ -30,6 +30,7 @@ import { Page2Component } from './pages/sub-route/page2/page2.component';
 import { PrivadoComponent } from './pages/privado/privado.component';
 import { DetalheComponent } from './pages/detalhe/detalhe.component';
 import { ListaSimplesComponent } from './pages/lista-simples/lista-simples.component';
+import { UserService } from './services/user.service';
 
 @NgModule({
   declarations: [
@@ -67,7 +68,7 @@ import { ListaSimplesComponent } from './pages/lista-simples/lista-simples.compo
     MatButtonModule,
     HttpClientModule
   ],
-  providers: [],
+  providers: [UserService],
   bootstrap: [AppComponent]
 })
 export class AppModule { }
